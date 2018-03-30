@@ -14,4 +14,7 @@ Pod::Spec.new do |s|
   s.subspec "Core" do |ss|
     ss.source_files  = "Source/Charts/**/*.swift"
   end
+
+  s.pod_target_xcconfig = { 'MACH_O_TYPE' => 'staticlib'}
+
 end
